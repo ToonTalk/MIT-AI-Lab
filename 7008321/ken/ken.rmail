@@ -1,0 +1,121 @@
+
+Date: 29 August 1980 23:50-EDT
+From: Carl Hewitt <CARL at MIT-AI>
+Subject:  delegation vs. referral
+To: BEPPE at MIT-AI, HENRY at MIT-AI, KEN at MIT-AI
+cc: HEWITT at MIT-AI
+
+After kicking around the terminology
+with people for a while, I have not detected
+any great groundswell of support for
+using "refer" instead of "delegate".
+
+However we should emphasize more that the first
+delegation is special because the client remains
+the same by default through successive delegations.
+
+Do any of you fell strongly about the question?
+
+Cheers,
+
+Carl
+
+MOON@MIT-MC 08/30/80 03:50:16 Re: really a dftp problem but bug-dftp is broken
+To: KEN at MIT-AI
+The datacomputer no longer exists, as of a few months ago.  Maybe the messages
+about that came out after you left for Sweden.
+
+KEN@MIT-AI 08/29/80 22:53:23
+send a message to Henry about Data computer if I make no progress
+
+MSG: *MSG   261   
+DISTRIB:  *ECL, *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 08/28/80 12:24:55
+MFS@MIT-MC 08/21/80 12:24:55 Re: Bed Wanted...
+	I am looking for a double or queen size bed at a reasonable price.
+If you have one that you are trying to unload, or your uncle is in the bed
+business and can give me an incredible deal (A deal I wouldn't give my own
+mother, but for you...) please leave a message for me.Mark Sylvester (MFS @ MC)
+
+
+KEN@MIT-AI 12/29/79 05:07:27
+see if the last guy in perfor will miscompile to show to jonl,etc.
+
+KMP@MIT-MC 12/23/79 16:32:25
+To: ken at MIT-AI
+That LSPSFA file has moved again. It now lives on MC:TURNIP; -- it is
+likely to stay there for a while. Lemme know how things go with it. I
+sent in the LINEL bug to Bug-Lisp -- hope they get it fixed.
+
+
+KEN@MIT-AI 12/22/79 04:00:51
+remember to fix up the 2500 turtle stuff
+
+b) negative spin
+
+
+KEN@MIT-AI 12/14/79 15:11:37
+got up to "plans and psuedo-parallelism" in the guide
+
+KEN@MIT-AI 12/08/79 08:27:29
+time director without the display (i.e. use tvrtle > ?)
+
+KEN@MIT-AI 11/07/79 04:12:05
+figure why the following did not lose very gracefully
+
+(ask star when drawing do (repeat 5 (sequentially (move forward 100) (turn right 144))))
+
+KEN@MIT-AI 07/20/79 07:07:08
+dlist doesn't work right if dtsf is not 1.0
+won't find the center etc.  Must be because I don't use it in the
+stats gathered up
+
+
+Date: 28 OCT 1979 1959-EDT
+From: KEN at MIT-AI (Kenneth Kahn)
+Subject: Time
+To: HPP.GENESERETH at SU-SCORE
+CC: KEN at MIT-AI
+
+I've been travelling around the world and just got back and got your message
+
+    Date: 25 Sep 1979 2131-PDT
+    From: HPP.GENESERETH at SU-SCORE
+
+
+    I'm teaching the AI course at Stanford this quarter, and I need
+    a good paper on the representation of time.  I thought of your
+    masters thesis, but it's pretty long.  Isthere anything shorter?
+    Other good references  Larry Fagan has just completed a PHD on
+    the subject here.  I don't know anything about it yet though.
+    What about a reference (paper) on your aesthetics stuff?  I'm more
+    interested in technique at the monet than philosophy.
+
+    How are things going?
+    -------
+
+I'll send a longer message later.
+Gorry and I wrote a AI Journal paper on time August 1977 that I would recommend.
+As to aesthetics stuff my thesis (tr should be out now or soon) is the best bet.
+
+The trip was great!
+
+KEN@MIT-AI 07/13/79 21:07:52
+see if ship works much faster if the objects are not PART of something
+
+KEN@MIT-AI 07/10/79 20:50:53
+there is a little problem with
+broadcasting and aeoy in that it should happen concurrently
+
+KEN@MIT-AI 02/20/79 01:02:24
+think about fixing up colors to be full-fledged actors
+
+KEN@MIT-AI 11/01/78 06:11:00
+so use the part/whole and dependency stuff in diagrm 
+then worry about making them a bit smarter
+also should be able to move a link which will move the boxes at the ends
+maybe the copy-of-state should be in text along with copy-of-text?
+
+KEN@MIT-AI 10/27/78 02:00:58
+one way of fixing crossing is to allow them but change the label-position
+

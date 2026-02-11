@@ -1,0 +1,699 @@
+
+Date: 25 May 1979 1510-EDT
+From: EBM at MIT-DMS (J. Eliot B. Moss)
+To: info-r at MIT-AI
+Subject: R bug fix, and Macro package change
+Message-id: <[MIT-DMS].112541>
+
+R bug fixed:  .tr and .tc did not reclaim all the storage they
+	should, which caused an R that used them a lot to grow to
+	immense sizes.  This has been fixed, and there is no change
+	in functionality, only in memory usage.
+
+Macro package change:
+	The figure stuff has been changed yet again, this time to
+reduce the amount of white space appearing before the line separating
+figures and footnotes.  (This white space grew as a side-effect of a
+recent bug fix.)  The difference will probably not be visible on the XGP,
+but will make LPT output look somewhat better.  Also, the previous fixes
+to figures have been carried over to footnotes.  Unless I receive bug
+reports, this stuff should be stable for a long time.
+
+NOTE: This new R has been installed as NR20 on XX and NR on ITS.
+Unless I hear objections, I will promote both on Mon.
+
+
+
+Date: 26 May 1979 0945-PDT
+From: Brian Harvey <BH at SU-AI>
+Subject: a precedent broken
+To:   "@WORLD.DIS[1,BH]" at SU-AI
+
+Yesterday I was on the phone in the computer center when four kids
+got into a fight about who would get to use the terminal, and after
+wrestling for a while they managed to crash the system, and then
+as soon as I got off the phone they started in on how it was the
+other guy's fault, and I had about a thousand things to do that day,
+so instead of massaging their backs and listening to their tales
+of woe I just threw all of them out for the rest of the day, amid
+a chorus of "that's not fair!"  Everyone was amazed, because I've
+put up with much more annoying activities without doing anything
+to them and they're not used to having me act like a teacher.
+Perhaps they'll learn to be able to figure out when I'm too busy
+to be bothered with them.
+
+Yesterday was also the last day of school for seniors.  That led
+to a good deal of rowdyism all over the school.  (Earlier in the
+week the seniors let the air out of the tires of all the school
+buses one morning; apparently there is a tradition that there must
+be a Senior Prank.  I haven't heard the word "prank" in a long
+time--been hanging out too much with people who say "hack"!)
+
+Yesterday was also the day we had a meeting with Dan Curtin of
+Digital Leasing Corp.  If you want to buy a computer from DEC
+and pay it off over time, they send you to Digital Leasing,
+which is in fact not a part of DEC although DEC set it up in the
+first place.  And they have a close relationship in practice.
+Anyway, this guy had been in before, with documents for a
+five-year lease agreement, and we arranged a meeting to draw up
+the final documents now that the configuration is settled.
+Last time around he had left off a copy of the agreement which
+was missing page two, so we didn't know exactly what it said.
+Turns out that it said that after the five years, after we've
+paid off the cost of the system and then some, we still didn't
+own it!  We would have the option of paying an extra 10% to
+buy it at that point.  They hadn't mentioned that before.  So
+we said well in that case we'll borrow the money from our
+bank, see you around, and he said "Oh, you want a Conditional
+Sales Agreement!"  It seems they have this other kind of deal
+where you do end up owning the machine, and the interest is
+cheaper to boot.  Naturally it hadn't occurred to the turkey
+to mention it before.  Grrrr.  So we're starting all over on
+filling out forms and sending them to the lawyers.  This guy
+is a real turkey.  Not only that, he is the only person I ever
+met who has an HP calculator (the business kind) and can't
+figure out how to use a non-HP (i.e. non-RPN) one!  Not only
+that, he smokes.  Turkey Of The Month.
+
+I was even wearing my "thank you for not smoking near me" t-shirt.
+Which was also ignored by David Levington, my boss, who smokes a
+pipe.  After the meeting I went back to the computer center and
+the first thing that happened was that one of the kids said to
+me "I can tell by the smell that they didn't pay any attention
+to your t-shirt."  So I've written a memo on the subject of how
+it will make my job harder if the kids don't want to be near me
+because I'm carrying around his stink.
+
+Oh, speaking of meetings, Tuesday I went to a School Committee
+meeting to talk about the computer system.  It was a farce.  First
+they talked about the Executive Intern program, and spent an hour
+and a half listening to students who had been in the program talk
+about how wonderful it was.  Then they spent two hours talking
+about Discipline: they got a report from the building superintendent
+about how many thousand dollars we spend each month on repairing
+vandalism, with pretty color graphs on transparencies, then they
+heard from the Assistant Principal and the Hall Directors about
+how many suspensions there were this year in each of 40 different
+categories.  (They had ordered the school to tighten up on
+discipline, and specifically to suspend kids more.  To their
+credit, the A.P. and hall directors told them politely but firmly
+that they thought it was all a bad idea.)  By the time that was
+over it was after 11 pm so nobody wanted to spend another two
+hours talking about the computer.  Instead they talked about the
+paperwork.  It seems we have to let people bid on supplying the
+computer, even though we know nobody will beat DEC's offer, and
+we had already advertised the bid.  The committee passed a
+resolution authorizing us to advertise it, which we had already
+done.  They didn't want to authorize us to sign the lease (this
+was before we found out from the Turkey about the conditional
+sales agreement) until the bidding was over--something about it
+not being legal or something.  So they are going to have a special
+meeting in a week, after the bids are in, to sign the papers.
+It was all pretty obnoxious because we had invited a couple of
+people from the town who had been working with us on planning
+the configuration and all that to come talk to the committee
+with me, so we all had to sit around all evening waiting to not
+have the discussion after all.  But in any case, they have
+in principle approved spending the money, even though they didn't
+sign anything this time around, so it's all settled, it says here.
+
+Oh, another contributing factor to yesterday is that one kid
+came to my 10 am algebra class smelling of alcohol.  It says in
+books that kids don't drink in the morning unless there is
+something very wrong going on in their lives, so that got me
+worried too.  Quite a day, yesterday.
+
+But afterwards I took a kid home because he wanted to hear
+all my wonderful 1960s records.  So I think I've created
+another Kinks fan.
+
+
+
+Date: 27 MAY 1979 0922-EDT
+From: JONL at MIT-MC (Jon L White)
+Subject: Replies to ` query
+To: RBR at MIT-MC, KMP at MIT-MC, RWK at MIT-MC, KEN at MIT-MC
+To: PRATT at MIT-MC, MACRAK at MIT-MC
+CC: (BUG LISP) at MIT-MC, JONL at MIT-MC
+
+Soon there will be a new BACKQ package for maclisp, which willl
+have the option of generating "macroified" code, with the name
+|`-expander/|| as a primary eval-time macro.  This option will
+be exercised if BACKQUOTE-EXPAND-WHEN is "EVAL" (or in general
+anything except "READ), and otherwise the expansion will occur
+at read-in time just as at present.  Three other internal markers:
+|-,-/||  |-,@-/||  and |-,.-/||    The latter one is for NCONC
+instead of APPEND, and thus we can have `(A ,@B)  generate
+(APPEND A B ()), thus copying B, but `(A ,.B)  generate
+(APPEND A B).  Note that `(,.A B) would generate (NCONC A B).
+[this idea, for ",." comes from RBR, I think].
+GRINDEF would print out a form just like it was read-in, using
+the READMACROINVERSE feature;  however, there is a flaw in this
+feature in that readmacros won't appear in the CDR part of
+a list;  thus you never see '(A . 'B)  grindef'd out that way.
+For the same reason, it would be somewhat of a pain to get
+`(A . ,B) to grindef out that way, but `(A ,@B) and `(A ,.B)
+both win.  Note the weird commutation:  `(A . ,B) works the
+same as `(A ,. B)  ??
+All the aforesaid "markers" and macros would be on the obarray,
+so that any PRINTing or GRINDEFing (regardless of the success of
+the READMACROINVERSE attempts)  would be readable back in with
+no loss of functionality.
+Any further comments?
+
+
+Date: 27 May 1979 22:39-EDT
+From: Kent M. Pitman <KMP at MIT-MC>
+Subject: Replies to ` query
+To: JONL at MIT-MC, RBR at MIT-MC, KMP at MIT-MC, RWK at MIT-MC,
+    KEN at MIT-MC, PRATT at MIT-MC, MACRAK at MIT-MC
+cc: BUG-LISP at MIT-MC
+
+sigh.
+
+
+Date: 29 MAY 1979 1012-EDT
+From: RG at MIT-AI (Richard Greenblatt)
+Subject: series 8 cold load
+To: INFO-LISPM at MIT-AI
+
+  the series 8 cold load is making its appearance on
+various machines.  
+--------------------------
+[1]  Meters work differently.  **incompatible change**
+[2]  LMIO1;XGP is an initial part of the system.  This
+     means ESC-Q always available.
+[3]  PKG-LOAD, LOAD-FILE-ALIST, and COMPILE-FILE-ALIST
+     are available in a form which takes a functional argument.
+[4]  The usual accumulation of bug-fixes, etc, installed.
+[5]  A tool exists to help track down the source of 
+     "symbol appears more than once in the cold load" errors.
+     Look in LISPM;COLDF if you ever need to use this.
+[6]  The initial facility which allows you to augment the microcode
+     incrementally is operational.  Brave pioneers (who expect
+     to get arrows in the back) should see RG.
+
+[1] Meters  (ie counts of various events maintained by the
+microcode) work differently.  They used to be available
+as variables, ONE-Q-FORWARDed to A-Memory.
+  Problem was, 24 bits wasnt enough.  Carries into the
+data-type field happened,  eventually
+crashing the system when the GC looked at the corrupted
+data.  In the new scheme, the meters are no longer directly
+accessible.  Instead there exists (READ-METER <meter-name>)
+and (WRITE-METER <meter-name>).  The meter names are the
+same as before, but note they are in the SI: package.
+Meters are now a full 32 bits, thus, READ-METER can return
+a BIGNUM.  MOON;LMETER has been updated to use the new scheme.
+
+[2] YEA.
+
+[3] SI:PKG-LOAD-MAP, SI:LOAD-FILE-ALIST-MAP, and SI:COMPILE-FILE-ALIST-MAP
+exist (as of now, they're not in GLOBAL, in the future they will be).
+These all take a functional argument in the first argument position,
+followed by arguments as in the base form.  Anytime it is decided to "do"
+anything (compile or load a file), the functional argument is called,
+with arguments indicating what is to be done.  Its arranged so that if
+the functional argument is (FUNCTION FUNCALL), the entire effect is exactly
+like the base form.
+
+Date: 30 May 1979 0837-EDT
+From: EBM at MIT-XX
+Subject: R bug fixed
+To: info-r at MIT-AI
+
+A bug which caused a blank line and .sp to have different effects
+when causing a trap has been fixed.  It manifested itself in the
+form of blank pages after figures whose insertion was caused by
+a trap set off by a blank line.  A blank line and .sp are now
+entirely equivalent.  The old NR was flushed, and this fixed R
+put in as NR in its place.  If I don't get bug reports, I will
+promote it to R in a few days.
+-------
+
+Date: 30 May 1979 9:29 am (Wednesday)
+From: Borning at PARC-MAXC
+Subject: plans
+To: KEN@MIT-AI
+cc: 
+
+How are your plans shaping up for next year?  If you're going to be in
+Stockholm, you would be most welcome to come visit in Edinburgh.  (Actually,
+you can visit even if you don't go to Sweden ...)  We already have arrangements
+for a flat, and it has a spare guest bedroom.  Will be leaving in mid-August ...
+it's the cheap budget fare, which doesn't allow any stopovers, so unfortunately I
+won't be able to stop in Boston on the way.
+
+The conference in La Jolla sounds good - I was thinking about going to it, but
+decided instead to leave for Edinburgh in time to be there during the Festival.
+
+Haven't been doing anything with ThingLab lately.  For the past several weeks
+I've been hacking on a decompiler that takes Smalltalk byte codes and
+reconstitutes the source text.  The immediate application is on the Notetaker,
+where there isn't any room to store the sources.  Some other applications might
+involve trying an alternative syntax for Smalltalk, e.g. a graphical or
+template-oriented one.  When the decompiler is done, however, I have to go back
+and crank out a tech report.  The results of my comparative study are that
+hacking is more fun than doing theses or writing reports.
+	Alan
+
+Date: 31 MAY 1979 0930-PDT
+From: BALZER at USC-ISIB
+Subject: YOUR EMPLOYMENT INTERESTS
+To:   KEN at MIT-AI
+
+KEN,
+HAVE YOU DECIDED WHAT YOU ARE GOING TO DO? WE'RE GETTING VERY CLOSE TO
+HAVING TO MAKE A DECISION, SO I'D LIKE TO KNOW WHAT YOUR SITUATION IS.
+BOB
+-------
+
+MSG: DDT    1381  
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 06/02/79 08:19:00
+RWK@MIT-MC 05/25/79 08:19:00 Re: New DDT installed on MC;  Questions (18 lines)
+A new DDT has been installed on MC, and will appear elsewhere soon.
+For full details, see the file .INFO.;DDT ARCHIV
+Here are highlights:
+
+1)  DDT now prints [Home dir=USERS1] (or whatever) when you log in
+and your home directory is not the same as your XUNAME.  This simply
+tells you what directory you're assigned to, for your information;
+no response is necessary.
+
+2)  Bug fixes have been applied to the undefined symbol handling
+(forward referencing).  Please report any problems relating to this.
+
+Questions:  Currently, when you log in on a second terminal while already
+logged in, and you have an init file, DDT offers to run it by saying --INIT--.
+It has been suggested that this question be flushed, and that DDT just
+always run the init.  You can avoid having the init run by saying <uname>0U
+What do people think?
+
+Also, should <uname>0U offer to print messages and mail (currently it does).
+
+
+MSG: PARENS 2     
+DISTRIB:  *MULTICS, *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 05/31/79 18:44:49
+PRATT@MIT-AI 05/25/79 18:44:49 Re: Alternative names for LEPs and RIPs
+For OPEn and close parens, you could try OPEs and FEARs.
+When you start out to write your S-expression you 'ope it
+will work, but by the time you get done you fear it won't.
+
+MSG: SUBLET 6     
+DISTRIB:  *DM, *MC, *ML, *AI
+EXPIRES: 06/26/79 13:03:30
+MYERS@MIT-ML 05/26/79 13:03:30 Re: Apt wanted for summer
+
+A female friend of mine needs an apt. for the summer in the Boston
+or Camb area.
+Will pay up to $100 per month and needs to move in immediately!!
+Please reply soon to Myers@XX.
+
+(Alternatively, you can call me at 494-8280 or dl 5-8384)
+thanks,
+
+Brad
+
+MSG: LISP?  2     
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 06/12/79 03:29:02
+JONL@MIT-MC 05/27/79 03:29:02 Re: # as an initial READ character macro
+Would any one object of # were an autoloadable READ character macro
+defined in the initial LISP?  The definition would be essentially 
+that from the file LISPM2;MACROS > .   (This is how BACKQ is 
+currently handled)
+
+
+MSG: PNUT   1     
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 06/06/79 13:57:55
+ELLEN@MIT-MC 05/29/79 13:57:55 Re: P.S. about peanut butter (long (but funny) message)
+Steve Lammert from CMU recounts the following story which happened to the
+MIT student who transported his peanut butter to CMU:
+
+The scene -- Logan International Airport
+
+Our hero, not wishing to trust UPS or the TWA baggage men with his treasure,
+has successfully made his way through the X-ray machine with a large white
+tub.  Briefcase in one hand and handle of tub in the other, he is hustling
+toward his gate for a plane that is about to leave him stranded in Boston.
+
+Suddenly, from behind him, he hears the sound of running feet and a voice
+shouting, "HEY!  STOP!  You, with the tub!  STOP!"
+
+Our hero stops, amidst a mixed feeling of curiosity, impatience, and quiet
+fear.  He is approached by a man in a dark suit and dark glasses, who flashed
+a badge from somewhere in his hand.
+
+"Airport security.  What's in the tub?"
+
+Somewhat exasperatedly, our hero replys "Twenty-five pounds of peanut butter."
+
+"What?"
+
+"Twenty-five pounds of peanut butter.  You want a taste?  Or maybe you'd
+like to probe inside it with your forearm.  Here, I'll open it for you..."
+
+"Uh, no thanks.  Really, we were just....ah, doing our job.  You a student
+here?"
+
+"Yup."  Our hero picks up the peanut butter and dashes for his plane,
+but as he leaves the scene, he hears the security man mutter:
+"...must be one of those kids from M.I.T....peanut butter.  Sheesh!"
+
+
+MSG: BOOKS  1     
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 06/10/79 20:08:01
+KATHIE@MIT-MC 05/30/79 20:08:01 Re: Bookstore offering discount
+The Brattle Square Book Store is offering at least 20% on all hardcover
+and paperbacks.  Further discounts on special orders available in excess 
+the 20%.  This bookstore is located at 38B Brattle Street, Cambridge.
+The telephone is 547-7676.
+
+I have no special interest in this store, but I did notice that they
+offer an excellent selection of non-fiction.
+
+MSG: DISK   1     
+DISTRIB:  *AI
+EXPIRES: 06/15/79 23:52:52
+MOON@MIT-AI 05/30/79 23:52:52 Re: New disk installed on AI
+The AI system has a new disk, which is primarily reserved for large files
+for vision hacking.  To write a file on this disk, write to the VISION:
+device, just as the SECOND: device is used for the secondary pack.  The
+new disk shows up as pack number 14 in directory listings.  Let me know
+if any directories should be set up to default to store files on VISION:.
+
+MSG: *MSG   62    
+DISTRIB:  *MC
+EXPIRES: 06/07/79 15:23:03
+JKESS@MIT-MC 05/31/79 15:23:03 Re:  GLP paper message from someone calling himself fucked
+
+    fucked@MIT-MC (Sent by ___032@MIT-MC) 05/31/79 04:07:28
+    you fuckingbastard, that HUMOUR printout you did used up the
+    last paper in the GLPT! and I wanted my pritout before going home! now!!!!
+
+I don't know who to blame for this -- sorry to all other users, but
+it requires a reply.
+
+1) Protocol states that all unsigned messages shall be ignored. If you
+have something to say, then feel free to say it, but give the recipient
+a chance to respond.
+
+2) Such language is non-optimal; it conveys no useful data.
+
+3) Paper in transfinite quantities is stored under the desks next to our
+IMLAC. Replacement is trivial; if you can't figure it out, ask someone.
+
+4) As yet, no remote low-paper warning is available, else I would have
+come over to the office and replaced the paper. I was working from the
+stud center, and intended to pick up my output today.
+
+If you wish to discuss this further, please contact me -- but sign your
+mail. This kind of broadcast note is an annoyance to all users -- I resent
+being forced to use it to reach you.
+
+					Joseph Jay Kesselman Jr.
+					Keshlam the Seer
+					Knight of Randomness
+					Hacker of Plasma
+					And slightly ticked off.
+
+
+MSG: POWER  1     
+DISTRIB:  *DM, *MC, *ML, *AI
+EXPIRES: 06/04/79 15:23:45
+WJL@MIT-ML 05/31/79 15:23:45 Re: 2nd & 3rd floor electricity on Saturday
+The electical power to the 2nd and 3rd floors may be off at various times
+between 7:30am and 1:00pm on Saturday, June 2. -- something to do with
+IBM remodelling.
+
+KEN@MIT-AI 05/24/79 01:44:25
+method-list selector for the gravitaional field in ship lisp is fucked up,
+ie when the masses are nil it still picks the (? %) one.
+also compiling files that extend primitive actors should be compiled differently
+
+KEN@MIT-AI 05/22/79 20:18:26 Re: sign language class reminder
+To: KEN at MIT-AI
+CC: BAK at MIT-AI
+sign language meeting thursday 31st 5pm
+
+KEN@MIT-AI 05/21/79 02:43:50
+within someone like compile-file should be able to direct warnings to
+a file like perfor warnin and not bother me and have them to look over.
+
+
+
+KEN@MIT-AI 05/21/79 02:45:39
+think about the problem raised by the (make an instance named ...) methods in box.
+They should only occur once, which means that the seocnd position should hold a
+list of "invisible" methods that is checked against possible winners
+
+5-24 on second thought maybe the problem is just the any ask within an ask-old should
+bind the second frob or something like that
+PHW@MIT-AI 05/17/79 13:27:00
+Would you like to try Sur Stromming?  Date?
+May 26th?
+
+PSZ@MIT-ML 05/09/79 17:33:08
+To: STAFF-6031 at MIT-ML
+What you've all been waiting for!!!  (Better Late Than Never Department)
+If you do
+:l kbs;lispup
+on the ML machine, you get a genuine Lisp which works just as advertised
+(well, almost) in the 6.031 notes.  It ain't very efficient, but it
+seems to work reasonably well.  The Lisp is defined in KBS;LISPIN >, and
+the file which loads it up and describes the implementation problems is
+KBS;LISPUP >.
+
+Happy hacking!
+
+
+KEN@MIT-AI 05/02/79 00:12:34
+think about how I can avoid consing up :message when I know it won't be need.
+
+zvona@ai (Sent by ___006) 04/30/79 19:48:42 Re: heuristics for drawing (long message)
+To: ken at MIT-AI
+CC: aesthetics at MIT-AI
+i recently got a copy of The Big Yeloow Drawing Book by Dan, Marian,
+& Hugh O'Neill. I am rather excited by it, because it appeas
+to be essentially a set of explanations of the basic rules
+that are used by artists to acheive a given effect. In the words of the book:
+	This is a different drwing book...It presents the concept that
+	drawing is the basis of fine art and that the basic principles
+	of good drawing have been defined.Because these principles
+	have been defined, they must be learned in order to  present a three
+	dimentional illusion on a two dimentional piece of paper.
+	In writining the book the suspicion arose thsat the 
+	undefinable mysticism of art should be rejected. The tired old
+	concept that discovery is the only approach to art is considered
+	inefficient.
+
+the book goes on the present techniques, starting from the very basics,
+for drawing, concentrating on conveying emotions.
+(dan o'neill is a cartoonist.) the neat thing is that he shows how easily
+emotions are conveyed by very simple, symbolic pictures:
+
+	All cartoons are signals, exacvtly the way stop signs, red lights,
+	green lights are signals. signals give us information: stop, go,
+	slow down.
+	The cartoon character has a signal on its face: an expression!
+ This expression
+	tells us the character is feeling an emotion. the way the character
+	looks tells us what it fels, and that is much more than the words
+	the character will speak.
+	The signals are simple. get your self a soft lead pencil and turn
+	the page...
+
+because the techniques he presents are so simple, i think it would
+be relatively easy (ie a merely herculean labor)
+to extend ANNI to producing o'neills expressive faces, given the pre-
+existing emotional machinery.
+
+KEN@MIT-AI 04/30/79 01:32:56
+the following no longer works
+(ask sally set your (color-of ? ?) to yellow)
+
+KEN@MIT-AI 04/30/79 01:38:23
+(ask sally forget your (color-of friend ?))
+does not work anymore either
+
+Date: 23 APR 1979 0821-PST
+From: BALZER at USC-ISIB
+Subject: WAITING GAME
+To:   KEN at MIT-AI
+
+FINE, WE ARE IN NO PARTICULAR HURRY.
+BOB
+-------
+
+KEN@MIT-AI 04/21/79 04:03:42
+see why face miscompiled when using the dummy tvrtle but not otherwise
+
+KEN@MIT-AI 04/16/79 04:32:11
+some strange things happen when I change the scaling eg (scale .5)
+
+STEELS@MIT-AI 04/02/79 21:08:02
+To: ETHER-DISCUSSION at MIT-AI
+Conjecture: Instead of retracting the default we should retract 
+ the making of the default.
+
+Any thoughts on this ?
+
+Luc 
+
+MSG: LIBLSP 1     
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 04/18/79 17:48:42
+KMP@MIT-MC 03/27/79 17:48:42 Re: New Packages on LIBLSP (Lisp hackers only)
+I have moved several of my lisp libraries onto LIBLSP/LIBDOC directories.
+Files affected are:
+
+LIBLSP;QTRACE FASL - (Documentation in "LIBDOC;QTRACE >") - some functions
+		     for doing query-breaking in lisp instead of the 
+		     normal TRACE/BREAK options.
+
+LIBLSP;SAVE FASL - (Documentation in "LIBDOC;SAVE >") - These functions
+		   are for saving out functions/values/etc from a lisp
+		   and getting them back in again.
+
+LIBLSP;TTY FASL - (Documentation in "LIBDOC;TTY >") - This package
+		  defines only two macros - DO-WITH-TTY-ON and 
+		  DO-WITH-TTY-OFF - for turning on/off character input
+		  echo in Lisp.
+
+Questions/Comments/Bugs to KMP@MC.
+
+
+KEN@MIT-AI 03/01/79 01:02:50
+for appearances such as snow:
+why not make every one go through an actor and change dl fasl do also be
+able to collect a fd,rt, kind of display-list (if it doesn't already)
+and just run a director performer around keeping its display list for
+drawing.  the current stuff would have to do a run draw-poly ... but
+guys like poly should really be repeat <> (forward ..)(right ..)
+
+KEN@MIT-AI 03/01/79 00:59:45
+makes boxes use absolute-size which is the height and the width is known
+relative to that
+
+KEN@MIT-AI 02/20/79 01:02:24
+think about fixing up colors to be full-fledged actors
+
+KEN@MIT-AI 02/08/79 23:38:18
+think about using @ instead of _ in R stuff and that way tags will work 
+but doesn't have to go through subst.
+
+KEN@MIT-AI 01/27/79 23:25:16
+To: KENS at MIT-MC
+CC: KEN at MIT-AI
+Hi.  If you want to get my thesis from disk then read or ftp the following files:
+ai:ken1;thabs
+ken1;chintr >
+ken1;chmake >
+ken1;chfd >
+ken1;chsug >
+ken1;chcho >
+ken1;chmeth >
+ken1;choth >
+ken1;chuse >
+ken1;chimp >
+ken1;chdis >
+and the following are the appendices
+ken1;apcind >
+ken1;aprun >
+ken1;apstat >
+ken1;apdes >
+ken1;aprep >
+ken1;apcode >
+ken1;apart >
+and the bibliography
+ken1;bib >
+
+If this is too much trouble I can mail you a copy.  Let me know.
+Good luck.
+                                                  -ken
+
+JLK@MIT-MC 01/25/79 11:37:07
+To: INFO-EMACS at MIT-AI
+I have flushed the TEMACS macro library.  Instead there are now the libraries:
+SCRLIN - macros for moving over screen lines instead of text lines.
+         Automatically sets up ^A, ^E, ^N, ^P.  On non-display consoles,
+         these macros revert to text line movers.
+DELIM  - macros for moving over balanced pairs of []{}()<>"'.
+         Sets up C-[, C-], C-(, C-), etc. to move over pairs (forward or back).
+JLKMAC - Mostly defines setup hooks for JLK.
+
+Anybody currently using TEMACS probably wants to simply load SCRLIN or DELIM.
+Other people who wanted to try out screen line moving or delimiter moving,
+but didn't want to get screwed by JLK's hacks, now have a chance.
+
+
+KEN@MIT-AI 01/22/79 03:44:31
+still a few little bugs left in themac
+1) .begin_saying after a .New_paragraph isn't quite lined up
+2) a few headings for example "what is art?" are widows
+3) figures are centered quite right
+
+KEN@MIT-AI 01/22/79 04:21:38
+figure out why the narrow stuff in chintr was left-shifted
+
+RLB@MIT-MC 01/14/79 11:14:18 Re: Gazillions of tiny ARC files
+To: KEN at MIT-AI
+I wrote some EMACS code to copy directly from the arc file to disk files
+without going thru the system ARC device handler.  In a test using a link
+from my data directory to MC:LLOGO;AR2 INTRO, attempting to barf out ALL
+of the 190 files, it took 27 secs of runtime to get thru 170 of them
+before it lost with directory full.  If/when you are ready to re-R them,
+in your EMACS do MM Run Lib$LLOGO;ARCDSK which will lead you by the
+hand to specify (1) what arc file, and (2) selection of which files
+you don't want by killing in a recursive ^R.
+
+As I'm sure you are aware, ITS directories don't really have enough room
+to store a moby archiv file, as well as hundreds of DSK duplicates of
+the contents.  Probably the way to win is to use a (nearly) empty
+directory and put a link there to the real arc file.
+
+The ARC device handler locks the arc file lots, so if any job has a
+channel open to that archive, the EMACS code can't open the arc file
+to read it directly.  It waits after reading the usual directory from
+the ARC device before it can get the file open for direct reading.
+Directory Full is not recoverable in my code, so beware.
+
+
+KEN@MIT-AI 01/01/79 23:41:48
+in chimp add reference to fry or someine here
+
+What I am a suggesting is that perhaps a generalization of the formalist school of aesthetics
+
+MSG: ADVENT 1     
+DISTRIB:  *CMU, *DM, *MC, *ML, *AI
+EXPIRES: 01/16/79 14:51:33
+WHITBY@MIT-MC 12/16/78 14:51:33 Re: new adventure
+i have a new adventure (called odyssey) written in 'C'
+and would appreciate any good ideas for rooms tricks/traps etc.
+if if people want the source ill propably let it out
+because id like to let other people set it up with their data
+so that i can play
+
+
+KEN@MIT-AI 12/15/78 04:50:54
+so I don't get screwed sometime aught to make match know about
+director-symbol-for-quoted-pattern and director-symbol-for-eval?
+
+KEN@MIT-AI 11/01/78 06:11:00
+so use the part/whole and dependency stuff in diagrm 
+then worry about making them a bit smarter
+also should be able to move a link which will move the boxes at the ends
+maybe the copy-of-state should be in text along with copy-of-text?
+
+KEN@MIT-AI 10/27/78 02:00:58
+one way of fixing crossing is to allow them but change the label-position
+
+SCP@MIT-AI 11/07/77 18:42:26
+The camera is running after a fashion.  One problem,however, is that the TYOWAIT command
+no longer exists in logo, so it will be hard to coordinate the camera with the screen.  Is it possible to get TYOWAIT reinstated?  Also, I wrote a small amount of documentation on logo of
+the hardware; you can get it by saying READ [1; USERS STEVE.P COLOR>] .
+

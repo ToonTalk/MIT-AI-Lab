@@ -1,0 +1,41 @@
+.eq set_number nr
+.set_number times_fonts 0
+.so ken1;rmacs >
+.define begin_address
+.nofill
+.line_space 1
+.indent 0
+.break
+.em
+.define end_address
+.fill
+.space 3.5
+.line_space 1.7
+.em
+.define begin_text
+.New_paragraph
+.em
+.define end_text
+.space 2
+.yours
+.em
+.define yours
+.indent 42
+Yours,
+.space 2.5
+.indent 49
+Kenneth M. Kahn \0
+.indent 0
+.em
+.
+.nofill
+.line_space 1
+Kenneth M. Kahn
+Logo Group, MIT AI Laboratory
+545 Technology Sq. Room 348
+Cambridge, Ma. 02139, U.S.A.
+Tel (617) 253-6214 (home 547-9784)
+date
+.space 2
+.indent 0
+.fill

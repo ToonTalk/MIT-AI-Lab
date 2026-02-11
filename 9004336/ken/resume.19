@@ -1,0 +1,159 @@
+ -*-text-*-
+.nr normal_fonts 1
+.nr gothic_fonts 0
+.so ken1;rmacs >
+.line_space 1
+.space 1
+.center "t Kenneth M. Kahn r"
+.space 2
+.nofill
+The Artificial Intelligence Laboratory
+Massachusetts Institute of Technology
+545 Technology Square, Room 348
+Cambridge, Mass. 02139
+Tel. 617-253-6214 (home 547-9784)
+.fill
+.space 1.5
+bProfessional Objectives:r
+.space .5
+I plan to have a career in computer science research and teaching.
+My interests are at the border between artificial intelligence, computer graphics, language
+design, and aesthetics.
+.nofill
+.space 1.5
+bEducational Background:r
+.space .5
+Massachusetts Institute of Technology, September 1973 to February 1979
+.indent .5
+M.S. in Electrical Engineering, August 1975
+Thesis: "Mechanization of Temporal Knowledge"
+.space .4
+Ph.D in Electrical Engineering and Computer Science, January 1979
+Thesis: "Creation of Computer Animation from Story Descriptions"
+.space
+.indent 0
+University of Pennsylvania, September 1969 to June 1971 and September 1972 to June 1973
+.indent 5
+B.A. in Economicsi magnum cum lauder with distinction in major, June 1973
+.indent 0
+.space
+University of Stockholm, September 1971 to June 1972
+.space 1.5
+bResearch Experience:r
+.space .5
+.fill
+	From 1973 to 1975 I implemented two versions of a time specialist, a computer
+program capable of accepting a wide range of temporal statements, checking their
+consistency, and making inferences to answer questions.  Following that I implemented
+in Logo several small systems used by elementary school children for programming animation
+and natural language.  Since then I have been involved in the design, implementation, and use
+of a actor-based computer language called "Director"
+for use in programming knowledge-oriented computer animation.
+Concurrently I have been working on my thesis project involving the
+creation a system capable of making
+simple computer animated films in response to vague incomplete story descriptions.
+.nofill
+.new_page
+bProfessional Experience:r
+.space .5
+MIT Research Scientist and Lecturer, February 1979 to present (committed until September 1979)
+.space .5
+Artificial Intelligence Laboratory, MIT, September 1978 to January 1979, Research Assistant
+.space .9
+IBM Graduate Student Fellowship Recipient, September 1976 to June 1978
+.space .9
+Laboratory for Computer Science, MIT, July 1976 to August 1976, Research Staff
+.space .9
+LOGO Group, Artificial Intelligence Laboratory, MIT, September 1975 to January 1976, 
+Research Assistant
+.space .9
+Clinical Decision Making Group, Project MAC, MIT, September 1973 to August 1975,
+Research Assistant
+.space .9
+Philadelphia Social History Project, September 1972 to July 1973,
+Programmer of a statistical and graphical study of census data
+.space .9
+University of Pennsylvania's Computer Center, January 1970 to July 1971,
+Applications programmer, consultant and liaison to the humanities departments
+.space 1.3
+bTeaching Experience:r
+.space .5
+Department of Electrical Engineering and Computer Science, MIT, February 1979 to present
+Lecturer for "Structure and Interpretation of Computer Languages"
+.space .9
+Filmwomen of Boston, Inc., March 1977, Teacher of a workshop on computer animation
+.space .9
+Department of Electrical Engineering and Computer Science, MIT, January 1976 to May 1976,
+Teaching Assistant for "Problem-Solving Paradigms"
+.space .9
+Logo Group of the MIT Artificial Intelligence Lab, February 1975 to December 1975
+Teaching of elementary school children to program graphics, animation, and natural language
+.space .9
+University of Pennsylvania's Computer Center, September 1970 to July 1971,
+Instructor of non-credit programming courses
+.space 1.3
+bBackground and Interests:r
+.space .5
+.fill
+I was born in Chicago, Illinois on January 25, 1952.
+My interests include filmmaking,
+cooking, reading and writing science fiction, travel, bicycle touring, scuba diving,
+and producing computer art.
+.nofill
+.new_page
+bPublications:r
+.space .3
+Kahn, K. "Making Aesthetic Choices", January 1979, submitted to IJCAI-79
+.space .5
+Kahn, K. "Creation of Computer Animation from Story Descriptions", August 1979, MIT TR-540
+.space .5
+Kahn, K. "Director Guide", AI Memo 482a, MIT, June 1978 (Revised July 1979)
+.space .5
+Kahn, K. "Ani: An Example of Computational Creativity",
+Proceedings of the AISB/GI Conference, Hamburg, Germany, July 1978
+.space .5
+Kahn, K. and Hewitt C."Dynamic Graphics using Quasi Parallelism",
+AI Memo 480, MIT, June 1978
+Revision of: Kahn, K. and Hewitt C. "Dynamic Graphics using Quasi Parallelism",
+Proceedings of the ACM/Siggraph Conference, Atlanta, August 1978
+.space .5
+Kahn K. "Computer Animation: Toward An Accessible Technology"
+University Film Study Center Newsletter, Vol. 8, No. 3, February 1978 pp. 1,7-8
+.space .5
+Kahn, K. and Lieberman H.  "Computer Animation: Snow White's Dream Machine",
+italics("Technology Review"), Vol. 80, No. 1, October/November 1977, pp. 34-46
+.space .5
+Kahn, K. and Gorry, G. "Mechanizing Temporal Knowledge",
+italics("Artificial Intelligence Journal"), Vol. 9, No. 1, August 1977, pp. 87-108
+.space .5
+Kahn, K. "A Computational Theory of Animation", AI Working Paper 145, MIT, April 1977
+.space .5
+Kahn, K. "An Actor-Based Computer Animation Language", Proceedings of the SIGGRAPH/ACM
+Workshop on User-Oriented Design of Interactive Graphics Systems, October 14-15, 1976, 
+ed. Treu, S., pp. 37-43
+Revision of: Kahn, K. "An Actor-Based Computer Animation Language", LOGO Working Paper 48,
+AI Working Paper 120, MIT, February 1976
+.space .5
+Kahn. K. "Three Interactions between AI and Education",
+in italics("Machine Intelligence 8  Machine Representations of Knowledge"),
+eds. Elcock E. and Michie, D., Ellis Horwood Ltd. and John Wylie & Sons, 1977
+.space .5
+Kahn, K. "A Knowledge-Based Computer Animation System", LOGO Working Paper 47,
+AI Working Paper 119, MIT, February 1976
+.space .5
+Kahn, K. "A LOGO Natural Language System", LOGO Working Paper 46, MIT, December 1975
+.space .5
+Kahn, K. italics("Mechanization of Temporal Knowledge"), Project MAC, MIT,
+Technical Report 155, September 1975
+.space 1
+bFilmography:r
+.space .3
+"Cinderella", computer animation, 3 minutes, MIT AI Lab, October 1978
+.space .5
+"Two Nights on a Computer", computer animation, 4.5 minutes, MIT AI Lab, March 1978
+.space .5
+"Mulberry Bush", 3 minutes, animation, produced at the Carpenter Center for the Visual Arts,
+Harvard, 1976, honorable mention at the First International Student Film Festival
+.space .5
+"Cons", 2 minutes, computer animation, produced jointly at the Carpenter Center for the Visual
+Arts, Harvard and the Artificial Intelligence Laboratory, MIT, 1975

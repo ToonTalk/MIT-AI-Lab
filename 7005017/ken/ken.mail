@@ -1,0 +1,43 @@
+Date: 8 Jan 1979 0004-EST
+From: LSC at MIT-DMS (Lecture Series Committee)
+Sender: .BATCH at MIT-DMS
+Subject: This week's LSC events
+Keywords: LSC, MOVIE, 75-CENTS
+Message-id: <[MIT-DMS].97195>
+
+	This week's LSC movies:
+
+			    Wednesday, 1/10
+		       Rollerball; 7 & 10, 26-100
+
+			      Friday, 1/12
+		 Fiddler on the Roof; 6:30 & 10, Kresge
+
+			     Saturday, 1/13
+		   The Sound of Music; 6 & 10, 26-100
+
+			      Sunday, 1/14
+		    Romeo and Juliet; 7 & 10, 10-250
+
+	       Cost: $.75 [MIT or Wellesley ID Required]
+
+
+
+HENRY@MIT-AI 01/08/79 01:21:08
+THERE'S A TIMER PACKAGE ON LIBLSP; THAT'S PROBABLY MUCH
+BETTER THAN TRYING TO WRITE YOUR OWN.
+
+BAK@MIT-MC 01/08/79 04:43:35
+To: KEN at MIT-MC
+
+btw, giving the argument to keep works as advertised.
+
+
+KEN@MIT-AI 01/08/79 05:38:44
+flush the special case stuff for recall your parent
+and include them in the variable alist (since parent is always there)
+keep it in the third slot in the actor
+see why compile-cases-cleverly changed the order of the guys (or is that only
+if it doesn't matter) thou for efficiency should stick to original order
+work out a declare thing for arrays and other efficient variable structures
+

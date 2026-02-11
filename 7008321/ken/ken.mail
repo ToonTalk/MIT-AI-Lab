@@ -1,0 +1,257 @@
+LSH@MIT-MC 08/31/80 00:06:22
+To: LSH at MIT-MC, ken at MIT-AI
+It would be fine if you could take a tape and some papers with you to
+the Physics department in Stockholm for me when you go (when is that?).
+You were taking a MACLISP version right?
+I would need to send them a version of NIL. Also planned
+SCRIBE and ZORK, CHASE and such games.
+
+
+TK@MIT-AI 08/31/80 01:03:09
+In case no one else has told you, the datacomputer died about 9 months ago.
+I think everything on it is gone forever, but if you are really interested you
+might check with CCA (try DEE@CCA).
+
+Date: 1 September 1980 18:46-EDT
+From: Robert W. Kerns <RWK at MIT-MC>
+Subject:  The datacomputer is no more!
+To: KEN at MIT-AI
+cc: BUG-ITS at MIT-AI
+
+The problem is really that the datacomputer was discontinued last March or so.
+There were system messages about it long in advance.  You must have missed
+seeing them or something.  I don't know if there is any way to recover your
+files, although the fact that you were to connect at all would seem to indicate
+they are providing some sort of limited service, perhaps to allow recovery in
+cases such as yours.  Perhaps sending a note to someone at CCA will help?
+
+
+Date: 23 September 1980 23:27-EDT
+From: Mark L. Miller <MILLER at MIT-AI>
+Subject: MacLISP's Floating point
+To: JONL at MIT-MC
+cc: KEN at MIT-AI, GJS at MIT-AI, PHW at MIT-AI, TBlocker at BBNA,
+    MMiller at BBNA, ben at MIT-ML, BUG-LISP at MIT-MC,
+    BRoberts at BBNC
+
+Please see my comments on the **'d item below ...
+    Date:  9 SEP 1980 0225-EDT
+    From: JONL at MIT-MC (Jon L White)
+
+        Date: 8 September 1980 14:03-EDT
+        From: Benjamin Kuipers <BEN at MIT-ML>
+        TOPS-10 MACLISP still has the problem of using KA-10
+        floating point instructions, which must be software
+        simulated on the Tufts KL-10.  Are there any plans to
+        fix this?
+    Not that I know of.   Several other people have complained about
+    this -- especially Ken Kahn who is trying to use MacLISP on a
+    Swedish TOPS-10 that apparently doesn't support much in hte way of
+**  compatibility -- but there's just not a lot of "steam" here on our
+**  side to maintain the TOPS-10 version.  Hopefully, some combination
+**  of TOPS-10 MacLISP users could delve into these things? (the
+    CMUA crew, and maybe someone from Tufts?).
+
+I hate to criticize, since I know everyone there as friends and know that
+they do the best that they can, given human time limitations.  Moreover,
+the result of years of software development work has been freely
+distributed, and for this we should all be grateful.  But this situation,
+which I will describe as "The Inferiority of MacLisp Support on non-I.T.S.
+Systems" is a very serious problem for MacLisp AND THUS (if you believe, as
+I do, that it represents the future whereas InterLisp represents the past)
+FOR THE AI COMMUNITY AT LARGE.
+
+The documentation situation is equally embarrassing for MacLisp advocates.
+
+Byron and I, here at TI, have tried hard to "sell" MacLisp, but due to
+better documentation and 20X support, INTERLISP may win here in the end.
+("Hopefully you users will do it" is, unrealistic outside of the university
+setting -- although we ARE TRYING to bootleg some Tops-20 improvements to
+MacLisp, like cursorpos and such.)  This is particularly sad since we are
+trying to buy (indeed may be within days of ordering) LISPM's.  Those of
+you who have only lived in the I.T.S. world cannot appreciate just how
+inferior MacLisp is on other operating systems, relative to its state on
+I.T.S.  Given the number of sites running I.T.S. (!) this seems a bit
+parochial, even if understandable from the MIT point of view.
+
+I don't know what the right answer is, or how to improve the situation.
+But ignoring it doesn't help.
+
+One possible solution might be to propagate I.T.S. along with Emacs and
+MacLisp.  What is the legal status of this?  Can any site with a 10/20
+choose to run that instead (not just universities or just MIT)?  Who would
+I ask, to get a tape?  What special hardware configurations, if any, would
+be required?  What about updates?  Would it mean no further support from
+either DEC or maintenance houses when things crash?  SUPPOSE WE BOUGHT ALL
+FUTURE 10/20-class MACHINES FROM FOONLY, INC., INSTEAD OF DEC?  Could THEY
+supply I.T.S., and will they help out when an I.T.S.-based machine crashes?
+
+Or, is there any chance that M.I.T. will move over to Tops-20 release N,
+after most of the good features of I.T.S. get stolen by DEC?  The version
+from CMU, with multi-forking and PCL commands, release 4, is pretty nice;
+in some ways nicer (certainly friendlier to learn) than I.T.S.  Mostly what
+it lacks is operating system level display support -- each application
+(like Emacs) must reinvent the wheel.
+
+Please accept these comments as constructive feedback.  For now, we will
+continue to try to improve the Tops-20 user environment; we may even
+attempt a manual on the scale of the recent UCI document.  On the other
+hand, this task seems so ominous for a new group that we may well have to
+go over to INTERLISP in order to get some things running to show off to
+management.  At the end of the year, we can't just say "we wrote a manual
+for LISP and fixed some bugs specific to the Tops-20 version of our
+favorite dialect".
+
+If you have other suggestions, they'd be welcome.
+    Regards, Mark
+
+Date: 27 SEP 1980 0905-EDT
+From: JONL at MIT-MC (Jon L White)
+Subject: Your long note of last week
+To: miller at MIT-AI
+CC: KEN at MIT-MC, GJS at MIT-MC, PHW at MIT-MC, (BUG LISP) at MIT-MC
+CC: TBlocker at BBNA, ben at MIT-ML, BRoberts at BBNC
+
+    Date: 23 September 1980 23:27-EDT
+    From: Mark L. Miller <MILLER at MIT-AI>
+    Subject: MacLISP's Floating point
+    To: JONL at MIT-MC
+    cc: KEN at MIT-AI, GJS at MIT-AI, PHW at MIT-AI, TBlocker at BBNA,
+	MMiller at BBNA, ben at MIT-ML, BUG-LISP at MIT-MC,
+	BRoberts at BBNC
+I was hoping to reply more to your note, Mark, but Scott Fahlman's reply
+(which is still in my mail file) makes essentially the main point -- 
+that maintaining Maclisp, while useful, is not a forward-looking project
+(as NIL is).  However, two things are on the horizon which may help you
+and other non-MIT Maclisp users:
+1) Kent Pitman has been working on a full Maclisp manual, to be done in
+   TEX, and there is some hope that this will be done "shortly".
+2) Mike Travers has done a virtual-terminal service for TOPS-20 (on the
+   XX machine) which essentially implements the ITS-style control-P 
+   codes -- thus it should be possible to use the ITS-specific code
+   for Maclisp's CURSORPOS (written in MIDAS), and thus achieve on TOPS-20
+   the same level of "rubout-ability" and CRT-usabililty  as on ITS.
+
+
+Date: 30 September 1980 01:10-EDT
+From: Mark L. Miller <MILLER at MIT-AI>
+Subject: Your long note of last week
+To: MILLER at MIT-AI, JONL at MIT-MC
+cc: TBlocker at BBNA, ben at MIT-ML, KEN at MIT-MC, GJS at MIT-MC,
+    PHW at MIT-MC, BUG-LISP at MIT-MC, BRoberts at BBNC
+
+Jonl,
+   Those two points are VERY encouraging!  Please sign TI up for an
+order of 2 dozen manuals (tell me where to send the check!) and
+please tell me how to get a Tops-20 Dumper tape of Mike Travers'
+20X CRT support goody.  Meanwhile, I'm still a "fan" you know and
+the last shot has not been fired.                         Regards, Mark
+
+
+
+Date:  7 OCT 1980 0031-EDT
+From: GLD at MIT-AI (Gary L. Drescher)
+Subject: Loft Party
+To: LOFT-PARTY at MIT-AI
+
+                         The Loft
+               
+                 cordially invites you to a
+               
+                   Piaget Memorial Party
+               
+                           next
+               
+               Saturday, October 11. 8 pm - 
+               
+                            at
+               
+                33 Edinboro St., 6th floor.
+               
+                   Featuring live music
+                   and other diversions.
+
+
+              (This invitation is recursive.)
+
+Date: 17 OCT 1980 0847-EDT
+From: JONL at MIT-MC (Jon L White)
+Subject: KL-10 (especially TOPS-10) incompatibilities for MacLISP
+To: MMiller at BBNA, KEN at MIT-AI, BEN at MIT-ML
+To: Cjohnson at SUMEX-AIM
+CC: (BUG LISP) at MIT-MC, Broberts at BBNG, TBlocker at BBNA
+CC: GJS at MIT-AI, PHW at MIT-AI
+
+I think I've finally fixed that old "snag", the lack of compatible
+double-precision floating-point instructions on most KL-10's.  I've
+CC'd this note to several people, since  Mark Miller made a rather
+long comment about this problem last month:
+    Date: 23 September 1980 23:27-EDT
+    From: Mark L. Miller <MILLER at MIT-AI>
+    Subject: MacLISP's Floating point
+    cc: KEN at MIT-AI, GJS at MIT-AI, PHW at MIT-AI, TBlocker at BBNA,
+	MMiller at BBNA, ben at MIT-ML, BUG-LISP at MIT-MC,
+	BRoberts at BBNC
+    .  .  .
+So in reply to Bob Meacham's note:
+    Date: 16 Oct 1980 0542-PDT
+    From: Cjohnson at SUMEX-AIM
+    Subject: MAClisp installation at ORNL
+    .  .  .
+    I almost immediately got the message "?KA10 floating point instruction at
+    user PC 441351"  DDT examination revealed the command "FADL  7,10".
+    Our 3 CPUs are KL-10s, and we are currently running version 7.01 of the
+    TOP-10 monitor.  Under this version, the monitor command "set float on"
+    will translate the FADL instruction to something acceptable, but under
+    the 7.02 monitor whose pre-release version we will receive in January
+    even this temporary fix will disappear.  So that's snag #1, I guess - I
+    need to get the FADL (which I guess MIDAS puts in there?) replaced by
+    something legal.
+    .  .  . 
+Finally! This is just the information I needed to find out what was
+wrong -- its only the lack of a true FADL, FDVL, etc on most KL-10s which
+cause thhe problem.  So I've just assembled a new lisp here at MIT-MC which
+has a run-time test for being on a KL-10, and uses appropriate versions of
+double-precision instructions.  Likely, by tomorrow this time, I'll have
+the TOPS-10 and TOPS-20 versions updated, and hoopefully some redistribution
+can begin.  As for your other complaint:
+    Now snag #2 is more mysterious to me.  When I did "set float on" and then
+    .  .  . 
+    ?Illegal UUO at user PC 436207
+    DDT revealed 436206 was HRRZ  12,0(12)  and 436207 was just 0,,436211
+    .  .  .
+	    Cordially, Robert Meacham
+Most likely this is due to an administrative limit on the maximum size of 
+"core" (really, "address space") used by a job on your TOPS-10 system -- 
+many system managers set a ridiculously low limit, which makes it impossible 
+to load up any significant application into MacLISP; but it shouldn't matter
+since you are no doubt running the VM system.  True, it is a bug that MacLISP
+doesn't die more gracefully, but there are so many more important things
+to work on first ....
+
+Date:  3 NOV 1980 2135-EST
+From: Danny at MIT-AI, Marg at MIT-AI, DLW at MIT-AI, Taft at MIT-AI, MMcM at MIT-AI, Joyce at MIT-AI
+Sent-by: MMCM at MIT-AI
+Subject: PARTY
+To: (@FILE AI: MMCM; PARTY LIST) at MIT-AI
+
+				     PARTY
+
+		     You are invited to a going-away party
+		       for everyone leaving the country
+		   when Ronald Raygun is elected President.
+
+				 To be held at
+			   The Ben-Eve Beauty Salon
+				 1006 Broadway
+				  Somerville
+
+		      On Saturday, the Eighth of November
+			      At 8:00 PM O'Clock
+
+			    Bring a friend or two.
+
+NRPSVP
+
+Directions from major landmarks can be found in the file AI: MMCM; DIRECT IONS.
+

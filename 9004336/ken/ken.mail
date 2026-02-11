@@ -1,0 +1,24 @@
+Date: 6 Aug 1979 1338-EDT
+From: EBM at MIT-DMS (J. Eliot B. Moss)
+To: info-r at MIT-AI
+Subject: Macro arguments
+Message-id: <[MIT-DMS].118973>
+
+After considerable thought, and discussion with several people,
+I have come up with a new proposal for inline and regular macro
+invocation.  See R;INLINE INVOKE.  This form would be incompatible
+wherever a macro argument started with a '{'.  ('{' and '}' are
+a new form of quotes for macro arguments.)  In addition, that file
+discusses a new form of insertion of macro arguments and string
+registers that puts backslashes back on control characters (its
+merits are discussed there, too).
+
+Note: as of now there is a bug in the ^A(expr) macro argument
+insertion form, which will be corrected soon.
+
+Get comments on the proposal back to me soon, since I would
+like to fix the bug and install the argument parsing stuff
+at the same time, within a few days.
+
+
+
